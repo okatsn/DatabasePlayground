@@ -1,0 +1,37 @@
+digraph ConceptMap {
+    rankdir=BT; // sets the layout from top to bottom
+    layout=dot;
+    
+    // Nodes
+    node [shape=ellipse, style="filled", fillcolor="#F5F5F5"]; 
+    subgraph cluster_sftp_server {
+        style = "rounded";
+        label = "NAS";
+        penwidth = 2; 
+        "SFTP server";
+        "Raw GEM data";
+    }
+
+    subgraph cluster_local_drive {
+        label = "Local Drive";
+        style = "rounded";
+        labelloc = b;
+        penwidth = 2; 
+        "Standard GEM data";
+        "Raw GEM data (copy)";
+    }
+
+    "User";
+
+    
+    // Edges
+    "User" -> "SFTP server";
+    "SFTP server" -> "Raw GEM data"
+    "Raw GEM data" -> "SFTP server"
+    "SFTP server" -> "Raw GEM data (copy)" -> "Standard GEM data" 
+
+    // "User" -> "Local Drive" [label="Saves files to"];
+    // "Raw GEM data" -> "Local Drive" [label="Converted to"];
+
+    "Standard GEM data" -> "User" [label=""];
+}

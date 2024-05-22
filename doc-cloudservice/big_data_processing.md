@@ -1,6 +1,6 @@
 # Processing Big data
 
-## Using DuckDB
+## Using DuckDB ...
 
 [From Zero to dbt: How to Analyze and Build Data Models from Spotify’s Million Playlist Data](https://medium.com/inthepipeline/from-zero-to-dbt-how-to-analyze-and-build-data-models-from-spotifys-million-playlist-data-241c3d8c9b5d)
 Outline
@@ -26,3 +26,9 @@ COPY playlist TO 'playlists.parquet' ;
 5. and save the file.
 
 You can also refer to [this talk with ChatGPT](https://chatgpt.com/c/ee7d8f5b-3f35-411f-98f4-274ac1390c0a) to understand basic SQL concerning this example.
+
+## ... with dbt
+
+[From Zero to dbt: Part 2 — Modeling Spotify’s Million Playlist Dataset](https://medium.com/inthepipeline/from-zero-to-dbt-part-2-modeling-spotifys-million-playlist-dataset-e62e350d9945)
+
+This article introduces how Data Build Tools (dbt) treat SQL queries as models and make data processing workflow that can be easily managed in a dbt project.

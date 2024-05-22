@@ -32,3 +32,5 @@ You can also refer to [this talk with ChatGPT](https://chatgpt.com/c/ee7d8f5b-3f
 [From Zero to dbt: Part 2 — Modeling Spotify’s Million Playlist Dataset](https://medium.com/inthepipeline/from-zero-to-dbt-part-2-modeling-spotifys-million-playlist-dataset-e62e350d9945)
 
 This article introduces how Data Build Tools (dbt) treat SQL queries as models and make data processing workflow that can be easily managed in a dbt project.
+
+See also [Transforming Data Engineering: A Deep Dive into dbt with DuckDB](https://blog.det.life/transforming-data-engineering-a-deep-dive-into-dbt-with-duckdb-ddd3a0c1e0c2).
